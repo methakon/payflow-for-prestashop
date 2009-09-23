@@ -1,3 +1,4 @@
+#labels Featured,Phase-Requirements,Phase-Implementation
 = Details =
 
 Details of the PayPal function that will process the transaction and return a status code.
@@ -8,9 +9,27 @@ Details of the PayPal function that will process the transaction and return a st
   * $sale_amount (int8)
 
 ===$customer_info (array)===
-  * $customer_number
-  * $billing_first_name
-  * $billing_last_name
+  * $customer_number (int16)
+  * $email (varchar)
+
+===$billing_info (array)===
+  * $billing_first_name (varchar)
+  * $billing_last_name (varchar)
+  * $billing_company_name (varchar)
+  * $billing_address (varchar)
+  * $billing_city (varchar)
+  * $billing_state (varchar)
+  * $billing_zip (int8)
+  * $billing_country (byte)
+
+===$billing_info (array)===
+  * $shipping_first_name (varchar)
+  * $shipping_last_name (varchar)
+  * $shipping_address (varchar)
+  * $shipping_city (varchar)
+  * $shipping_state (varchar)
+  * $shipping_zip (int8)
+  * $shipping_country (byte)
 
 ===$cc_info (array)===
   * $credit_card_number (int16)
