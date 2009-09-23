@@ -1,16 +1,21 @@
-#Details of the PayPal function that will process the transaction and return a status code.
-
 = Details =
 
+Details of the PayPal function that will process the transaction and return a status code.
+
 ==Input Arrays==
-*$cc_info (array)
-  * $credit_card_number (int16)
+===$order_details (array)===
   * $order_number (int8)
+  * $sale_amount (int8)
+
+===$customer_info (array)===
   * $customer_number
+  * $billing_first_name
+  * $billing_last_name
+
+===$cc_info (array)===
+  * $credit_card_number (int16)
   * $expiration_date (date)
   * $cvc_code (byte)
-  * $sale_amount (int8)
-  * $first_name
 
 
 ==Output Array==
