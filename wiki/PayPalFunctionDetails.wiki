@@ -1,0 +1,23 @@
+#Details of the PayPal function that will process the transaction and return a status code.
+
+= Details =
+
+==Input Arrays==
+*$cc_info (array)
+  * $credit_card_number (int16)
+  * $order_number (int8)
+  * $customer_number
+  * $expiration_date (date)
+  * $cvc_code (byte)
+  * $sale_amount (int8)
+  * $first_name
+
+
+==Output Array==
+
+
+==Constants==
+  _Possible Values: Authorization, Credit, Delayed_Capture, Sale_
+  * TransactionType = Sale
+  _Possible Values: Live, Test_
+  * TransactionMode = Test
